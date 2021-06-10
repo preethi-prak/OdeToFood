@@ -11,8 +11,10 @@ namespace OdeToFood.Web
     {
         public static void RegisterRoutes(RouteCollection routes)
         {
+            //trace.axd/1/2/3/4
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
+            // /home/contact/1
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
